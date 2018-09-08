@@ -1,0 +1,8 @@
+1. Saya suka husein.
+2. I love husein.
+3. Husein sangat handsome.
+4. Handsome itu Husein.
+
+gunicorn --worker-class gevent --workers 1 --bind 0.0.0.0:8020 server:app
+gunicorn --threads 5 --workers 1 --bind 0.0.0.0:8020 server:app
+gunicorn --worker-class eventlet --workers 1 --bind 0.0.0.0:8020 server:app
